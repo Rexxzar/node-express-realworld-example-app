@@ -1,1 +1,1 @@
-web: export DATABASE_URL="postgresql://$AUTODEVOPS_POSTGRES_USERNAME:$AUTODEVOPS_POSTGRES_PASSWORD@$AUTODEVOPS_POSTGRES_HOST:$AUTODEVOPS_POSTGRES_PORT/$AUTODEVOPS_POSTGRES_DATABASE" && npx prisma migrate deploy && node dist/api/main.js
+web: export DATABASE_URL="postgresql://autodevops:WQGCTFhqMSWrHjzzxg@$AUTODEVOPS_DB_HOST:$AUTODEVOPS_DB_PORT/app" && npx prisma migrate deploy && node dist/api/main.js
