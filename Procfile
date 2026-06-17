@@ -1,1 +1,1 @@
-web: node dist/api/main.js
+web: npx prisma migrate deploy && node dist/api/main.js
